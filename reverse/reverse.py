@@ -52,7 +52,7 @@ class LinkedList:
       # set next to be self.head.next_node
       next = current.next_node
       # not 100% sure why I have to put current.next instead of just "next," but it doesn't work without it, so I'll just deem it confusing magic, but this sets the prev from none to self.head.next_node.next.
-      current.next = prev
+      current.next_node = prev
       # do the magical switch dance
       prev = current
       current = next
